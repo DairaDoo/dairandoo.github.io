@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(45, 100, 252);
+}
+
+.div-titulo {
+    width: 100%;   /* Establecemos un ancho para el div-titulo */
+    height: 100px; /* Establecemos un alto para el contenido */
+    display: flex; /* El display flex nos ayuda a tener más flexibilidad organizando el contenido tanto vertical como horizontalmente. */
+    justify-content: center; /* Justify content centraliza el contenido de forma horizontal */
+    align-items: center;    /* Align items centraliza el contenido de forma vértical.*/
+}
+
+.container {
+    width: 100%; /* El contenedor se expandira horizontalmente para llenar todo el ancho del área en la que esta el contenido.*/
+    height: calc(100vh - 100px); /*La altura del contenedor será igual a la altura de la ventana menos 100 pixeles.*/
+    display: flex; /*Lo mismo, se usa para organizar el contenido tanto de forma vertical como horizontal de forma más flexible.*/
+    justify-content: center; /*Centralizamos el contenido de forma vértical */
+}
+
+/*Estilo Formulario*/
+.container .div-formulario {
+    width: 30%;
+    height: 250px;
+    margin: 15px 15px;
+    background-color: rgb(135,132,132);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Estilo h2 del formulario */
+.container .div-formulario h2 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2em;
+    color:whitesmoke
+}
+
+.container .div-formulario form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Estilo boton e input*/
+.container .div-formulario form input,
+.container .div-formulario form button {
+    width: 60%;
+    padding: 10px 10px;
+    margin: 10px 20px;
+}
+
+/*Estilo listado*/
+.container .div-listado {
+    width: 55%;
+    height: calc(100% - 50px);
+    margin: 15px 15px;
+    background-color: rgb(135, 132, 132);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo h2 dentro del listado */
+.container .div-listado h2 {
+    margin-top: 10px;
+    font-weight: 300px;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+/* Estilo sección de empleados dentro del listado */
+.container .div-listado .div-empleados {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 0 30px;
+}
+
+
+/*Texto dentro del área de empleados*/
+.container .div-listado .div-empleados p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #f0efef;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    margin: 0 5px;
+    color: white;
+    border-radius: 50px;
+}
+
+.btn-editar {
+    background-color: green;
+}
+
+.btn-eliminar {
+    background-color: red;
+}
+
+
+
