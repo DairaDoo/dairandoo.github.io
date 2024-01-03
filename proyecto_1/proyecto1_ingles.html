@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proyecto1_pag_web_con_bs</title>
+	<!--Añadimos boostrap a nuestro código-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+	<!--Añadimos CSS.-->
+	<link rel="stylesheet" href="estilo_proyecto1.css">
+
+	<!--Iconos-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+<!--Navbar-->
+<div class="container-fluid"> <!--Contenedor para el navbar de tipo fluido.-->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark border-3 border-bottom border-primary"> <!--Creamos el navbar y lo customizamos.-->
+		<div class="container-fluid"> <!--Aquí va el contenido de mi Navbar-->
+			<!--Contenido de mi navbar-->
+			<a href="#" class="navbar-brand"><i class="bi bi-book"></i> Most demanded Programming Languages </a>  <!--Creamos un link vacio y luego una clase diciendole que sera un navbar-brand(marca) y adentró la colocamos.-->
+			<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Menu_Desplegable"> <!--Contenedor desplegable(de hamburgesa)-->
+				<span class="navbar-toggler-icon"></span> <!--Aquí creamos el icono del navbar-->
+			</button>
+			<div id="#MenuNavegacion" class="collapse navbar-collapse"> <!--Creamos el menú de nuestro navbar-->
+					<ul class="navbar-nav ms-3"> <!--Los elementos de nuestro navbar van en una lista-->
+						<li class="nav-item"><a class="nav-link" href="https://www.simplilearn.com/best-programming-languages-start-learning-today-article">More info <i class="bi bi-info"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="proyecto1.html"> Change Language <i class="bi bi-translate"></i></a></li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<!--Primer Principal-->
+
+<div 
+class="jumbotron jumbotron-fluid parallax border-top border-success bg-light"
+style="box-shadow: 0px 0px 25px black !important;"
+>
+<div class="container py-5" id="javascript">
+  <h2 class="Text center pb-4 parallax-text-opacity">
+	<i class="bi bi-1-circle"></i> Javascript
+  </h2>
+
+  <div class="row">
+	<div class="col-md-6">
+		<img 
+		src="javascript.png"
+		alt="javascript_code"
+		class="img-fluid"
+		>
+	</div>
+	<div class="col-md-6">
+    <div class="col-md-8 fw-semibold text-inter-success">
+      <p>
+		Javascript was created in 1995 by Brendan Eich while working at Netscape Communications Corporation. JavaScript was designed to be a scripting programming language,
+        which means that it is designed to be easy to use and runs on the client, allowing programming to be done directly in the user's web browser.
+      </p>
+
+      <p>
+		JavaScript is an integral part of the modern web and is used on almost all web pages. It allows the creation of interactive pages, such as animations, dropdown menus
+        and image galleries. JavaScript is also used for form validation and data manipulation, making websites easier for visitors to use. In addition to its use on the web,
+        JavaScript is also used in server and desktop applications, which means that it is a highly versatile programming language that is useful for a wide variety of purposes.
+      </p>
+
+      <a href="https://javascript.info/intro" class="btn btn-primary">More info</a>
+  </div>
+  </div>
+ <!--Segundo Jumbotron-->
+ <div
+ class="jumbotron jumbotron-fluid parallax border-top bg-light text-bold
+ border border-success border-start-0 border-end-0"
+>
+<div class="container-py-5" id="python">
+<h2 class="Text-center pb-4 parallax-text-opacity">
+	<i class="bi bi-2-circle"></i> Python
+</h2> 
+
+<div class="row">
+	<div class="col-md-6">
+		<img 
+		src="python.png"
+		alt="python_code"
+		class="img-fluid "
+		>
+	</div>
+ <div class="col-md-6">
+<div class="col-md-8 fw-semibold text-inter-success">
+ <p>
+	Python was created by Guido van Rossum in the 1990s while he was working at the Center for Mathematics and Informatics in the Netherlands. Python's name comes from van Rossum's
+    fondness for the British comedy troupe Monty Python. The original goal of Python was to be a programming language that was easy to learn and read, with a clear and concise syntax.
+    Since its creation, Python has evolved to become one of the most popular and versatile programming languages ​​in the world.
+</p>
+ <p>
+	Python is widely used in data science and machine learning, thanks to its wide range of libraries and specialized frameworks. Many companies and organizations use Python to develop
+    web applications, due to its ability to integrate with other languages ​​and technologies. Python is also used in the creation of video games, automation tools, and in the field of robotics,
+    among other areas.
+</p>
+
+ <a href="https://www.teradata.com/Glossary/What-is-Python" class="btn btn-primary">More info</a>
+</div>
+</div>
+
+<!--Tercer jumbotron-->
+
+<div
+ class="jumbotron jumbotron-fluid parallax border-top bg-light text-bold
+ border border-success border-start-0 border-end-0"
+>
+<div class="container-py-5" id="python">
+<h2 class="Text-center pb-4 parallax-text-opacity">
+	<i class="bi bi-3-circle"></i> Java
+</h2> 
+
+<div class="row">
+	<div class="col-md-6">
+		<img 
+		src="Java.png"
+		alt="Javascript"
+		class="img-fluid"
+		>
+	</div>
+ <div class="col-md-6">
+<div class="col-md-8 fw-semibold text-inter-success">
+ <p>
+	Java was created by James Gosling and his team at Sun Microsystems in the 1990s. The original goal of Java was to allow programs to be written once and
+    run on multiple platforms. The name "Java" was inspired by Gosling's love of Java brand coffee.
+
+</p>
+ <p>
+	Java is widely used in building server and business applications, including banking and financial applications. java is also
+    popular in desktop application development, especially large-scale enterprise application development. Java is widely
+    used in the creation of mobile applications for Android, which makes it one of the most used programming languages ​​in mobile development.
+</p>
+
+ <a href="https://www.ibm.com/topics/java" class="btn btn-primary">More info</a>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>About us</h4>
+        <p>This page is from a project.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Helpful Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4>Contact us</h4>
+        <p>123 Main Street, Nowhere</p>
+        <p>Phone: (000) 000 0000</p>
+        <p>Email: ididdnotputmyemail@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>

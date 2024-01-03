@@ -1,0 +1,116 @@
+body {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.reloj {
+    position:relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #0a0a0a; 
+    border-radius: 50%;
+}
+
+.aguja-hora,
+.aguja-minuto,
+.aguja-segundo,
+.centro-circulo {
+    position:absolute;
+    transform-origin: 50% 100%;
+    background-color: #297fff;
+}
+
+.aguja-hora {
+    height: 50px;
+    width: 6px;
+    top: 50px;
+    left: 97px;
+}
+
+.aguja-minuto { 
+    height: 80px;
+    width: 6px;
+    top: 20px;
+    left: 96px;
+}
+
+.aguja-segundo {
+    height: 90px;
+    width: 2px;
+    top: 10px;
+    left: 99px;
+    background-color: rgb(32, 163, 239);
+}
+
+.centro-circulo {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: 94px;
+    left: 94px;
+}
+
+h1 {
+    position: absolute;
+    text-align: center; 
+    margin-bottom: 450px    ;
+    font-size: 250%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgba(231, 227, 227, 0.8);
+    padding: 50px;  
+    text-shadow: #0a0a0a;
+    color: rgb(42, 25, 228);
+    border-radius: 50%;
+    border-radius: 50px;
+}
+
+
+/* Usamos un media query para convertir el reloj a responsivo */
+@media screen  and ( max-width: 418px ) {
+
+    .reloj {
+        width: 130px;
+        height: 130px;
+    }
+
+    .aguja-hora {
+        height: 50px;
+        width: 6px;
+        top: 10px;
+        left: 52px;
+    }
+
+    .aguja-minuto {
+        height: 80px;
+        margin: 4px;
+        top: 14px;
+        left: 51px;
+    }
+
+    .aguja-segundo {
+        height: 56px;
+        width: 2px;
+        top: 3px;
+        left: 57px;
+    }
+
+    .centro-circulo {
+        top: 56px;
+        left: 53px;
+    }
+
+    h1 {
+        height: 30px;
+        width: 100px;
+        font-size: 20px;
+    }
+
+}
+
+
+
